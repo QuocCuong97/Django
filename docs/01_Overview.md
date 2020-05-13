@@ -4,6 +4,11 @@
 - Phiên bản ổn định hiện tại : `3.0.6`
 - Trang chủ : https://www.djangoproject.com/
 - Github : https://github.com/django/django
+- Lịch sử của **Django** :
+    - `2003` - Được bắt đầu bởi **Adrian Holovaty** và **Simon Willison** như một project nội bộ cho tờ báo **Lawrence Journal-World** .
+    - `2005` - Ra mắt phiên bản đầu tiên vào tháng `7` và được đặt tên là **Django** , theo tên nghệ sĩ ghi-ta **Django Reinhardt** .
+    - `2005` - Đủ để vận hành một số web site có lượng traffic cao .
+    - Hiện tại - **Django** là một dự án mã nguồn mở với sự đóng góp trên toàn thế giới .
 - Những lợi thế của **django**:
     - **Hoàn thiện** : **Django** phát triển theo tư tưởng "*Batteries included*" ( có thể hiểu ý nghĩa là tích hợp toàn bộ, chỉ cần gọi ra mà dùng ) . Nó cung cấp mọi thứ cho developer không cần phải nghĩ phải dùng cái ngoài . Chúng ta chỉ cần tập trung vào sản phẩm , tất cả đều hoạt động liền mạch với nhau .
     - **Đa năng** : **Django** có thể được dùng để xây dựng hầu hết các loại website , từ hệ thống quản lý nội dung , cho đến các trang mạng xã hội hay web tin tức . Nó có thể làm việc với framework client-side , và chuyển nội dung hầu hết các loại format ( **HTML**, **RESS**, **JSON**, **XML**, ... )
@@ -12,7 +17,13 @@
     - **Dễ maintain** : code **django** được viết theo nguyên tắc thiết kế và pattern có thể khuyến khích ý tưởng bảo trì và tái sử dụng code. Trên thực tế , nó sự theo khái niệm *Don't Repeat Yourself* làm cho không có sự lặp lại không cần thiết , giảm một lượng code .
     - **Tính linh động** : **django** được viết bằng **Python** , nó có thể chạy đa nền tảng . Nó có nghĩa rằng bạn không ràng buộc một platform server cụ thể . **Django** được hỗ trợ tốt ở nhiều nhà cung cấp hosting, họ sẽ cung cấp hạ tầng và tài liệu cụ thể cho hosting web **django**.
 - Có thể cho rằng **Django** là framework phổ biến . Các trang web phổ biến sử dụng **Django** : **Disqus** , **Instagram** , **Knight Foundation** , **MacArthur Foundation** , **Mozilla** , **National Geographic** , **Open Knowledge Foundation** , **Pinterest** , and **Open Stack** .
-## **2) Cài đặt Django**
+## **2) Mô hình MVT**
+- **Django** là một **Python** web framework. Như các framework hiện đại khác, **Django** hỗ trợ mô hình **MVC (*Model-View-Controller)*** .
+- Mô hình **MVC** dựa trên 3 thành phần cơ bản : **Model**, **View** và **Controller** .
+- **Django** chính xác sử dụng mô hình **MVT (*Model-View-Template*)**. Sự khác biệt đối với **MVC** sẽ là : **Django** sẽ tự chăm lo phần **Controller** (phần code dùng để kiểm soát tương tác giữa **Model** và **View**), chừa lại cho người lập trình phần **Template**. **Template** là một file `HTML` kết hợp cùng với **Django Template Language (*DTL*)** .
+
+    <img src=https://i.imgur.com/pu5OoLj.png>
+## **3) Cài đặt Django**
 - Thực hiện cài đặt qua `pip` :
     ```
     $ sudo pip install django
