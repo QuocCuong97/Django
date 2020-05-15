@@ -6,13 +6,13 @@
     ```
     - **VD :**
         ```sh
-        $ django-admin startproject CRUD
+        $ django-admin startproject PythonWeb
         ```
         - Lệnh trên sẽ tạo ra 1 thư mục tên là `PythonWeb` ở trên thư mục hiện hành :
             ```sh
             PythonWeb/
             ├── manage.py
-            └── CRUD
+            └── PythonWeb
                 ├── __init__.py
                 ├── settings.py
                 ├── urls.py
@@ -22,14 +22,14 @@
             ```
 - **B2 :** Nên tạo **virtual environment** trước khi sử dụng **Django** :
     ```
-    $ cd CRUD/
+    $ cd PythonWeb/
     $ virtualenv env
     ```
     > Lệnh trên sẽ tạo ra một folder `env` trong thư mục project chứa các thành phần cần thiết của **Python** .
 - **B3 :** Truy cập **virtual environment** :
     ```
     $ source env/bin/activate
-    (env) cuongnq@CUOLAP:~/CRUD$ 
+    (env) cuongnq@CUOLAP:~/PythonWeb$ 
     ```
 ## **2) Cấu trúc Project Django**
 - Trong Project Python sẽ có 1 file `manage.py` và 1 folder cùng tên với Project .
@@ -42,7 +42,7 @@
 ## **3) Chạy web trên localhost**
 - **B1 :** Di chuyển vào folder Project :
     ```
-    $ cd CRUD
+    $ cd PythonWeb
     ```
 - **B2 :** Sử dụng lệnh sau để khởi động server ảo :
     ```
@@ -58,7 +58,7 @@
     Run 'python manage.py migrate' to apply them.
 
     May 13, 2020 - 15:43:18
-    Django version 3.0.2, using settings 'CRUD.settings'
+    Django version 3.0.2, using settings 'PythonWeb.settings'
     Starting development server at http://127.0.0.1:8000/
     Quit the server with CONTROL-C.
     ```
